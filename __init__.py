@@ -50,6 +50,7 @@ NODE_CLASS_MAPPINGS = {
     "Sum": SMath.SumNode,                                       # Summaries 2 values
     "Subtract": SMath.SubtractNode,                             # Subtracts Value_B from Value_A
     "Multiply": SMath.MultiplyNode,                             # Multiplies 2 values
+    "Multiply_Int": SMath.Multiply_Int_Node,
     "Divide": SMath.DivideNode,                                 # Divides Value_A on Value_B
     "Power": SMath.PowNode,                                     # Returns Value_A powered by Value_B
     "Square root": SMath.SquareRootNode,                        # Returns square root of Value

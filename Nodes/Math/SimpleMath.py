@@ -24,7 +24,26 @@ class MultiplyNode:
     def multiply(self, Value_A, Value_B):
         total = float(Value_A * Value_B)
         return (total,)
+class Multiply_Int_Node:
+    def __init__(self) -> None:
+        pass
 
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "Value_A": field.INT,
+                "Value_B": field.INT,
+            },
+        }
+
+    RETURN_TYPES = ("INT",)
+    FUNCTION = "multiply_int"
+    CATEGORY = TREE_MATH
+
+    def multiply(self, Value_A, Value_B):
+        total = int(Value_A * Value_B)
+        return (total,)
 
 class DivideNode:
     def __init__(self) -> None:
