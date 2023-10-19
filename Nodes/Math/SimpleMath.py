@@ -41,7 +41,7 @@ class Multiply_Int_Node:
     FUNCTION = "multiply_int"
     CATEGORY = TREE_MATH
 
-    def multiply(self, Value_A, Value_B):
+    def multiply_int(self, Value_A, Value_B):
         total = int(Value_A * Value_B)
         return (total,)
 
